@@ -1,0 +1,11 @@
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+@media (max-width: 816px) {
+    .product {
+        grid-template-columns: 1fr;
+    }
+}
