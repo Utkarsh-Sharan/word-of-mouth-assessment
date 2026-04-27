@@ -1,8 +1,11 @@
-import React from 'react'
+import Product from '../components/Hero/Product/Product';
+import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <section className='hero'>
+      <Product />
+    </section>
   )
 }
 

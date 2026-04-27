@@ -1,0 +1,48 @@
+.product-name {
+    color: var(--color-primary);
+}
+
+.short-review {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-secondary);
+}
+.short-review p {
+    font-size: small;
+    text-transform: uppercase;
+}
+.rating, .review, .sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.rating span, .review span, .sales span {
+    font-weight: 800;
+}
+
+.quantities {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantities span {
+    padding: 1px 5px;
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.quantities span:hover {
+    transform: scale(1.1);
+    color: #000;
+    background-color: var(--color-secondary);
+}
