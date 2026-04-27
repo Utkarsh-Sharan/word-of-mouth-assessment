@@ -1,0 +1,14 @@
+.review-section {
+    margin: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 789px) {
+    .review-section {
+        margin: 40px 10px;
+    }
+}
