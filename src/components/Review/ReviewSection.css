@@ -6,9 +6,19 @@
     align-items: center;
     gap: 20px;
 }
+.review-type-buttons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 @media (min-width: 789px) {
     .review-section {
         margin: 40px 10px;
+    }
+    .review-type-buttons {
+        max-width: 100%
     }
 }

@@ -1,9 +1,9 @@
-import { Star } from "lucide-react";
-import "./ReviewBox1.css";
+import { Star } from 'lucide-react';
+import "./ReviewBox2.css";
 
-function ReviewBox1({review}) {
+function ReviewBox2({review}) {
   return (
-    <article className="review-box">
+    <article className='review-box'>
       <div>
         <div>{
           Array.from({length: review.stars}).map(
@@ -23,7 +23,7 @@ function ReviewBox1({review}) {
         </div>
       </div>
     </article>
-  );
+  )
 }
 
-export default ReviewBox1
+export default ReviewBox2
