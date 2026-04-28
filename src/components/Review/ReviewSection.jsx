@@ -1,8 +1,9 @@
 import ReviewType1 from "./ReviewType1/ReviewType1";
+import ReviewType2 from "./ReviewType2/ReviewType2.jsx";
+import ReviewType3 from "./ReviewType3/ReviewType3.jsx";
 import {dummyReviews} from "../../constants/dummyReviews.js";
 import "./ReviewSection.css";
 import { useEffect, useState } from "react";
-import ReviewType2 from "./ReviewType2/ReviewType2.jsx";
 
 function ReviewSection() {
   const [reviewType, setReviewType] = useState({
@@ -24,6 +25,11 @@ function ReviewSection() {
           type: <ReviewType2 reviews={dummyReviews} />,
         });
         break;
+      case "review-3":
+        setReviewType({
+          type: <ReviewType3 reviews={dummyReviews} />,
+        });
+        break;
       default:
         console.log("Invalid review type!");
     }
@@ -42,6 +48,7 @@ function ReviewSection() {
         <article className="review-type-buttons" onClick={handleClick}>
           <button id="review-1">Simple</button>
           <button id="review-2">Sliding Window</button>
+          <button id="review-3">Joyful</button>
         </article>
         
         {reviewType.type ? reviewType.type : "No reviews found!"}
