@@ -1,0 +1,11 @@
+.review-type-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 600px) {
+    .review-type-1 {
+        grid-template-columns: 1fr;
+    }
+}
