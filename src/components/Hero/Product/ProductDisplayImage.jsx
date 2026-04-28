@@ -1,4 +1,4 @@
-import "./Productgallery.css";
+import "./ProductGallery.css";
 
 function ProductDisplayImage({displayImage}) {
   return (
